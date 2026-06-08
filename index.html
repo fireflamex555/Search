@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -92,43 +92,51 @@
 <body class="bg-white text-stone-800 min-h-screen relative overflow-x-hidden selection:bg-stone-100 selection:text-stone-900 flex flex-col justify-between">
 
     <!-- Ambient / Scattered Images (Decorative Background Collage - Jesus & Cross focused) -->
+    <!-- Positioned with clear offsets to prevent any overlapping -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <!-- Top Left: Elegant Cross Silhouette at sunset (Shifted down below the header) -->
-        <div class="absolute top-28 md:top-36 left-6 md:left-12 w-28 h-36 md:w-44 md:h-56 bg-white p-2 shadow-sm border border-stone-100 rounded-lg water-drift-slow-1 hidden sm:block" style="--r: -2deg;">
-            <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&q=80&w=400" alt="Cross silhouette at sunset" class="w-full h-full object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=400'">
+        
+        <!-- ==================== LEFT SIDE IMAGES ==================== -->
+        
+        <!-- Image L1 (Top Left): Elegant Cross Silhouette (Always Visible) -->
+        <div class="absolute top-[14%] left-4 md:left-8 lg:left-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-1" style="--r: -2deg;">
+            <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&q=80&w=400" alt="Cross silhouette at sunset" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=400'">
         </div>
 
-        <!-- Top Right: Majestic Statue of Jesus (Christ the Redeemer) against beautiful skies (Shifted down below the header) -->
-        <div class="absolute top-36 md:top-44 right-6 md:right-16 w-32 h-40 md:w-48 md:h-60 bg-white p-2 shadow-sm border border-stone-100 rounded-lg water-drift-slow-2 hidden sm:block" style="--r: 3deg;">
-            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=400" alt="Jesus Christ statue" class="w-full h-full object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&q=80&w=400'">
+        <!-- Image L2 (Mid Left): Majestic Statue of Jesus Christ (Always Visible) -->
+        <div class="absolute top-[44%] left-4 md:left-8 lg:left-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-2" style="--r: 1deg;">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=400" alt="Jesus Christ statue" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&q=80&w=400'">
         </div>
 
-        <!-- Mid Left: Golden sunset cross light -->
-        <div class="absolute top-[480px] -left-8 md:left-8 w-28 h-36 md:w-40 md:h-52 bg-white p-2 shadow-sm border border-stone-100 rounded-lg water-drift-slow-3 hidden lg:block" style="--r: 1deg;">
-            <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80&w=400" alt="Sunset cross on hill" class="w-full h-full object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1439853949127-fa647821ebb0?auto=format&fit=crop&q=80&w=400'">
+        <!-- Image L3 (Bottom Left): Golden sunrise cross on hill (Desktop Only - 3rd image) -->
+        <div class="absolute top-[74%] left-4 md:left-8 lg:left-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-3 hidden md:block" style="--r: 3deg;">
+            <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80&w=400" alt="Sunset cross on hill" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1439853949127-fa647821ebb0?auto=format&fit=crop&q=80&w=400'">
         </div>
 
-        <!-- Mid Right: High-quality cross monument silhouette in light -->
-        <div class="absolute top-[450px] -right-8 md:right-8 w-28 h-36 md:w-40 md:h-52 bg-white p-2 shadow-sm border border-stone-100 rounded-lg water-drift-slow-1 hidden lg:block" style="--r: -3deg;">
-            <img src="https://images.unsplash.com/photo-1515600389256-ac0a2a353cf4?auto=format&fit=crop&q=80&w=400" alt="Majestic Cross in Light" class="w-full h-full object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1544427920-c49ccfb85579?auto=format&fit=crop&q=80&w=400'">
+
+        <!-- ==================== RIGHT SIDE IMAGES ==================== -->
+        
+        <!-- Image R1 (Top Right): Cross monument silhouette in light (Always Visible) -->
+        <div class="absolute top-[18%] right-4 md:right-8 lg:right-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-3" style="--r: 2deg;">
+            <img src="https://images.unsplash.com/photo-1515600389256-ac0a2a353cf4?auto=format&fit=crop&q=80&w=400" alt="Majestic Cross in Light" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1544427920-c49ccfb85579?auto=format&fit=crop&q=80&w=400'">
         </div>
 
-        <!-- Bottom Left: Divine warm rays of light breaking through sky -->
-        <div class="absolute bottom-[160px] left-12 w-32 h-44 bg-white p-2 shadow-sm border border-stone-100 rounded-lg water-drift-slow-2 hidden xl:block" style="--r: 4deg;">
-            <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80&w=400" alt="Divine light rays" class="w-full h-full object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&q=80&w=400'">
+        <!-- Image R2 (Mid Right): Divine rays of light breaking through sky (Always Visible) -->
+        <div class="absolute top-[48%] right-4 md:right-8 lg:right-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-1" style="--r: -3deg;">
+            <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80&w=400" alt="Divine light rays" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&q=80&w=400'">
         </div>
 
-        <!-- Bottom Right: Stained glass pattern of cross & church faith -->
-        <div class="absolute bottom-[140px] right-12 w-36 h-48 bg-white p-2 shadow-sm border border-stone-100 rounded-lg water-drift-slow-3 hidden xl:block" style="--r: -2deg;">
-            <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&q=80&w=400" alt="Stained glass faith illustration" class="w-full h-full object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1500627869374-13cd993b1115?auto=format&fit=crop&q=80&w=400'">
+        <!-- Image R3 (Bottom Right): Stained glass pattern of cross (Desktop Only - 3rd image) -->
+        <div class="absolute top-[78%] right-4 md:right-8 lg:right-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-2 hidden md:block" style="--r: -1deg;">
+            <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&q=80&w=400" alt="Stained glass faith illustration" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1500627869374-13cd993b1115?auto=format&fit=crop&q=80&w=400'">
         </div>
+
     </div>
 
     <!-- Main Content Area -->
-    <div class="relative z-10 min-h-screen flex flex-col justify-between px-4 sm:px-6 lg:px-8 py-6">
+    <div class="relative z-10 min-h-screen flex flex-col justify-between py-6">
         
-        <!-- Header / Navigation (Enhanced transparency for a lightweight, seamless feel) -->
-        <header class="max-w-7xl w-full mx-auto flex justify-between items-center py-4 bg-white/40 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 rounded-xl px-4">
+        <!-- Header / Navigation (Enhanced transparency, fully extended to the absolute left and right) -->
+        <header class="w-full flex justify-between items-center py-4 px-6 md:px-12 bg-white/40 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
             <div class="flex items-center space-x-3">
                 <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center font-semibold text-xs tracking-wider serif-title bg-white/50 backdrop-blur-sm">
                     S
@@ -142,9 +150,8 @@
             </div>
         </header>
 
-        <!-- Hero Section: Central Quote -->
-        <!-- Placed lower beneath the header using specialized top padding -->
-        <main class="max-w-4xl w-full mx-auto flex-grow flex flex-col justify-start items-center text-center pt-24 pb-12 md:pt-36 md:pb-20">
+        <!-- Hero Section: Central Quote (Responsive safe padding remains on the main container) -->
+        <main class="max-w-4xl w-full mx-auto flex-grow flex flex-col justify-start items-center text-center pt-24 pb-12 md:pt-36 md:pb-20 px-4 sm:px-6 lg:px-8">
             
             <!-- Beautiful Central Quote Display with a clear Highlight card backing (protective rounded rectangle) -->
             <div class="mb-10 max-w-2xl w-full px-4 relative group">
@@ -200,6 +207,7 @@
             document.getElementById('info-modal').classList.remove('hidden');
         }
 
+        // Close UI Information Modal
         function closeInfoModal() {
             document.getElementById('info-modal').classList.add('hidden');
         }
