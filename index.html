@@ -91,52 +91,11 @@
 </head>
 <body class="bg-white text-stone-800 min-h-screen relative overflow-x-hidden selection:bg-stone-100 selection:text-stone-900 flex flex-col justify-between">
 
-    <!-- Ambient / Scattered Images (Decorative Background Collage - Jesus & Cross focused) -->
-    <!-- Positioned with parallel offsets flanking the central scripture card -->
-    <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        
-        <!-- ==================== LEFT SIDE IMAGES ==================== -->
-        
-        <!-- Image L1 (Top Left Parallel): Cross Silhouette -->
-        <div class="absolute top-[25%] left-4 md:left-8 lg:left-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-1" style="--r: -2deg;">
-            <img src="Pic2" alt="Cross silhouette at sunset" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Image L2 (Mid Left Parallel): Jesus Healing the Sick -->
-        <div class="absolute top-[46%] left-4 md:left-8 lg:left-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-2" style="--r: 1deg;">
-            <img src="Pic6" alt="Jesus healing" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Image L3 (Bottom Left Parallel): Jesus Portrait -->
-        <div class="absolute top-[67%] left-4 md:left-8 lg:left-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-3 hidden md:block" style="--r: 3deg;">
-            <img src="Pic5" alt="Jesus portrait" class="w-full h-full object-cover">
-        </div>
-
-
-        <!-- ==================== RIGHT SIDE IMAGES ==================== -->
-        
-        <!-- Image R1 (Top Right Parallel): Cross Monument -->
-        <div class="absolute top-[25%] right-4 md:right-8 lg:right-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-3" style="--r: 2deg;">
-            <img src="Pic4" alt="Cross monument" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Image R2 (Mid Right Parallel): Picture 1 -->
-        <div class="absolute top-[46%] right-4 md:right-8 lg:right-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-1" style="--r: -3deg;">
-            <img src="Pic1" alt="Spiritual imagery" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Image R3 (Bottom Right Parallel): Picture 3 -->
-        <div class="absolute top-[67%] right-4 md:right-8 lg:right-12 w-24 h-32 md:w-36 md:h-48 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-2 hidden md:block" style="--r: -1deg;">
-            <img src="Pic3" alt="Faith illustration" class="w-full h-full object-cover">
-        </div>
-
-    </div>
-
     <!-- Main Content Area -->
     <div class="relative z-10 min-h-screen flex flex-col justify-between py-6">
         
         <!-- Header / Navigation (Enhanced transparency, fully extended to the absolute left and right) -->
-        <header class="w-full flex justify-between items-center py-4 px-6 md:px-12 bg-white/40 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 rounded-xl px-4">
+        <header class="w-full flex justify-between items-center py-4 px-6 md:px-12 bg-white/40 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 rounded-xl">
             <div class="flex items-center space-x-3">
                 <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center font-semibold text-xs tracking-wider serif-title bg-white/50 backdrop-blur-sm">
                     S
@@ -150,20 +109,55 @@
             </div>
         </header>
 
-        <!-- Hero Section: Central Quote (Responsive safe padding remains on the main container) -->
-        <!-- Placed lower beneath the header using enhanced top padding -->
-        <main class="max-w-4xl w-full mx-auto flex-grow flex flex-col justify-start items-center text-center pt-36 pb-12 md:pt-48 md:pb-20 px-4 sm:px-6 lg:px-8">
+        <!-- Centered Parallel Workspace: Combines central scripture and flanking floating pictures flawlessly -->
+        <main class="relative w-full max-w-6xl mx-auto min-h-[750px] flex items-center justify-center px-4 sm:px-6 lg:px-8 flex-grow">
             
-            <!-- Beautiful Central Quote Display with a clear Highlight card backing (protective rounded rectangle) -->
-            <div class="mb-10 max-w-2xl w-full px-4 relative group">
-                <div id="quote-container" class="transition-opacity duration-500 opacity-100 bg-white/90 backdrop-blur-md border border-stone-100/80 p-8 md:p-12 rounded-2xl md:rounded-3xl shadow-sm flow-root">
-                    <p id="main-quote" class="serif-quote text-2xl md:text-3xl lg:text-4xl italic text-stone-800 leading-relaxed font-light text-center w-full max-w-lg">
+            <!-- ==================== LEFT SIDE IMAGES ==================== -->
+            
+            <!-- Image L1 (Top Left Parallel): Cross Silhouette (Always Visible on Tablet/Desktop) -->
+            <div class="absolute top-[8%] left-0 lg:left-8 w-24 h-32 md:w-32 md:h-44 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-1 hidden md:block bg-stone-50" style="--r: -2deg;">
+                <img src="Pic1" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Image L2 (Mid Left Parallel): Jesus Healing the Sick (Always Visible on Tablet/Desktop) -->
+            <div class="absolute top-[39%] left-4 lg:left-16 w-24 h-32 md:w-32 md:h-44 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-2 hidden md:block bg-stone-50" style="--r: 1deg;">
+                <img src="Pic2" alt="Jesus healing" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Image L3 (Bottom Left Parallel): Jesus Portrait (Shown on Desktop only) -->
+            <div class="absolute top-[70%] left-0 lg:left-8 w-24 h-32 md:w-32 md:h-44 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-3 hidden lg:block bg-stone-50" style="--r: 3deg;">
+                <img src="Pic3" alt="Jesus portrait" class="w-full h-full object-cover">
+            </div>
+
+
+            <!-- ==================== CENTRAL COLUMN (Scripture Quote Card) ==================== -->
+            <div class="relative z-10 w-full max-w-xl mx-auto px-4">
+                <div id="quote-container" class="bg-white/95 backdrop-blur-md border border-stone-100/80 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col items-center justify-center transition-all duration-300 hover:shadow-md">
+                    <p id="main-quote" class="serif-quote text-2xl md:text-3xl lg:text-4xl italic text-stone-800 leading-relaxed font-light text-center w-full">
                         "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
                     </p>
                     <p id="main-quote-author" class="mt-6 text-xs tracking-[0.25em] uppercase text-stone-400 font-semibold text-center">
                         John 3:16 (NIV)
                     </p>
                 </div>
+            </div>
+
+
+            <!-- ==================== RIGHT SIDE IMAGES ==================== -->
+            
+            <!-- Image R1 (Top Right Parallel): Mountaintop Cross Sunset (Always Visible on Tablet/Desktop) -->
+            <div class="absolute top-[8%] right-0 lg:right-8 w-24 h-32 md:w-32 md:h-44 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-3 hidden md:block bg-stone-50" style="--r: 2deg;">
+                <img src="Pic4" alt="Cross monument" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Image R2 (Mid Right Parallel): Crucifixion watercolor painting (Always Visible on Tablet/Desktop) -->
+            <div class="absolute top-[39%] right-4 lg:right-16 w-24 h-32 md:w-32 md:h-44 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-1 hidden md:block bg-stone-50" style="--r: -3deg;">
+                <img src="Pic5" alt="Jesus crucifixion" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Image R3 (Bottom Right Parallel): The Last Supper (Shown on Desktop only) -->
+            <div class="absolute top-[70%] right-0 lg:right-8 w-24 h-32 md:w-32 md:h-44 lg:w-40 lg:h-56 overflow-hidden rounded-2xl shadow-md water-drift-slow-2 hidden lg:block bg-stone-50" style="--r: -1deg;">
+                <img src="Pic6" alt="The Last Supper" class="w-full h-full object-cover">
             </div>
 
         </main>
